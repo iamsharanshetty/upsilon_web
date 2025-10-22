@@ -10,6 +10,7 @@ import {
   Phone,
   Linkedin,
   Twitter,
+  Instagram,
   Github,
 } from "lucide-react";
 
@@ -708,13 +709,13 @@ const Footer = ({ setCurrentPage }) => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/upsilon.ai1/"
                 className="text-slate-400 hover:text-lime-400 transition-colors"
               >
-                <Twitter className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://github.com/Upsilon-AI"
                 className="text-slate-400 hover:text-cyan-400 transition-colors"
               >
                 <Github className="w-5 h-5" />

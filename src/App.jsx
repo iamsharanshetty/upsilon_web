@@ -407,6 +407,104 @@ const ServicesPage = () => {
   );
 };
 
+//Projects Page
+// const ProjectsPage = () => {
+//   const projects = [
+//     {
+//       title: "Institutional Claims Auditor",
+//       description:
+//         "An advanced AI-powered system designed to streamline and automate the auditing process for institutional insurance claims. This solution leverages machine learning algorithms to detect anomalies, verify claim authenticity, and ensure compliance with regulatory standards.",
+//       features: [
+//         "Automated claim verification and validation",
+//         "AI-driven anomaly detection for fraud prevention",
+//         "Real-time compliance checking against regulatory frameworks",
+//         "Intelligent document processing and data extraction",
+//         "Comprehensive audit trail and reporting dashboard",
+//       ],
+//       technologies: ["Python", "TensorFlow", "NLP", "Computer Vision", "React"],
+//       link: "https://instutional-claims.vercel.app/",
+//       status: "Live",
+//     },
+//   ];
+
+//   return (
+//     <div className="min-h-screen pt-32 pb-24 bg-slate-950">
+//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+//         <div className="text-center mb-16">
+//           <h1 className="text-5xl md:text-6xl font-bold mb-6">Our Projects</h1>
+//           <p className="text-xl text-slate-400 max-w-3xl mx-auto">
+//             Innovative AI solutions delivering real-world impact
+//           </p>
+//         </div>
+
+//         <div className="space-y-12">
+//           {projects.map((project, idx) => (
+//             <div
+//               key={idx}
+//               className="bg-gradient-to-br from-slate-900 to-slate-800 p-8 md:p-12 rounded-xl border border-slate-700 hover:border-lime-500 transition-all duration-300"
+//             >
+//               <div className="flex items-start justify-between mb-6">
+//                 <div>
+//                   <h2 className="text-3xl md:text-4xl font-bold mb-3 text-lime-400">
+//                     {project.title}
+//                   </h2>
+//                   <span className="px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-sm">
+//                     {project.status}
+//                   </span>
+//                 </div>
+//               </div>
+
+//               <p className="text-slate-300 mb-6 text-lg leading-relaxed">
+//                 {project.description}
+//               </p>
+
+//               <div className="mb-6">
+//                 <h3 className="text-xl font-bold mb-4 text-white">
+//                   Key Features
+//                 </h3>
+//                 <ul className="space-y-2">
+//                   {project.features.map((feature, i) => (
+//                     <li key={i} className="flex items-start space-x-3">
+//                       <CheckCircle className="w-5 h-5 text-lime-400 mt-1 flex-shrink-0" />
+//                       <span className="text-slate-400">{feature}</span>
+//                     </li>
+//                   ))}
+//                 </ul>
+//               </div>
+
+//               <div className="mb-6">
+//                 {/* <h3 className="text-xl font-bold mb-4 text-white">
+//                   Technologies Used
+//                 </h3>
+//                 <div className="flex flex-wrap gap-3">
+//                   {project.technologies.map((tech, i) => (
+//                     <span
+//                       key={i}
+//                       className="px-4 py-2 bg-lime-500/10 border border-lime-500/30 rounded-full text-lime-400"
+//                     >
+//                       {tech}
+//                     </span>
+//                   ))}
+//                 </div> */}
+//               </div>
+
+//               <a
+//                 href={project.link}
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="inline-flex items-center space-x-2 bg-gradient-to-r from-lime-500 to-yellow-400 hover:from-lime-600 hover:to-yellow-500 text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+//               >
+//                 <span>Visit Project</span>
+//                 <ExternalLink className="w-5 h-5" />
+//               </a>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
 // Projects Page
 const ProjectsPage = () => {
   const projects = [
@@ -423,7 +521,44 @@ const ProjectsPage = () => {
       ],
       technologies: ["Python", "TensorFlow", "NLP", "Computer Vision", "React"],
       link: "https://instutional-claims.vercel.app/",
+      githubLink: "https://github.com/Upsilon-AI/IC-AUDITOR-NEW",
       status: "Live",
+    },
+    {
+      title: "Jailbreak LLM - AI Safety Testing Platform",
+      description:
+        "A sophisticated educational tool designed to test and evaluate the safety mechanisms of Large Language Models (LLMs). This platform simulates adversarial attacks on AI safety filters, helping researchers and developers understand vulnerabilities in content moderation systems.",
+      features: [
+        "Multi-Layer Defense Analysis",
+        "Model Comparison Testing",
+        "Real-Time Harm Detection",
+        "Interactive Testing Interface",
+      ],
+      technologies: ["Python", "LLMs", "AI Safety", "Testing Framework"],
+      link: null,
+      githubLink: "https://github.com/Upsilon-AI/Jailbreak_LLMs",
+      // status: "Open Source",
+    },
+    {
+      title: "Thermal-Microzoom - AI-Powered Microstructure Analysis",
+      description:
+        "An advanced computer vision tool leveraging Stable Diffusion and ControlNet to analyze and augment microscopic metal structures from thermal imaging. This system automatically processes TIFF microscopy images of laser-deposited metals, extracts regions of interest, and generates high-quality synthetic microstructural textures using AI-guided edge detection. Perfect for materials science research, additive manufacturing quality control, and metallurgical analysis.",
+      features: [
+        "Automated Image Preprocessing",
+        "Canny Edge Detection",
+        "AI-Powered Texture Augmentation",
+        "Additive Manufacturing Focus",
+      ],
+      technologies: [
+        "Python",
+        "Stable Diffusion",
+        "ControlNet",
+        "Computer Vision",
+        "OpenCV",
+      ],
+      link: null,
+      githubLink: "https://github.com/Upsilon-AI/Thermal-Microzoom",
+      // status: "Open Source",
     },
   ];
 
@@ -448,9 +583,9 @@ const ProjectsPage = () => {
                   <h2 className="text-3xl md:text-4xl font-bold mb-3 text-lime-400">
                     {project.title}
                   </h2>
-                  <span className="px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-sm">
+                  {/* <span className="px-3 py-1 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 text-sm">
                     {project.status}
-                  </span>
+                  </span> */}
                 </div>
               </div>
 
@@ -472,31 +607,30 @@ const ProjectsPage = () => {
                 </ul>
               </div>
 
-              <div className="mb-6">
-                {/* <h3 className="text-xl font-bold mb-4 text-white">
-                  Technologies Used
-                </h3>
-                <div className="flex flex-wrap gap-3">
-                  {project.technologies.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-4 py-2 bg-lime-500/10 border border-lime-500/30 rounded-full text-lime-400"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div> */}
+              <div className="flex flex-wrap gap-4">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 bg-gradient-to-r from-lime-500 to-yellow-400 hover:from-lime-600 hover:to-yellow-500 text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+                  >
+                    <span>Visit Project</span>
+                    <ExternalLink className="w-5 h-5" />
+                  </a>
+                )}
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 border-2 border-slate-600 hover:border-lime-500 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200"
+                  >
+                    <Github className="w-5 h-5" />
+                    <span>View on GitHub</span>
+                  </a>
+                )}
               </div>
-
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-2 bg-gradient-to-r from-lime-500 to-yellow-400 hover:from-lime-600 hover:to-yellow-500 text-slate-900 px-6 py-3 rounded-lg font-semibold transition-all duration-200"
-              >
-                <span>Visit Project</span>
-                <ExternalLink className="w-5 h-5" />
-              </a>
             </div>
           ))}
         </div>
